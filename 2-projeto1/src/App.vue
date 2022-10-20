@@ -1,27 +1,23 @@
 <template>
 
-<h1>Hello World</h1>
+<div>
+<PrimeiroComponente/>
+<LyfeCycle/>
+</div>
 
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import PrimeiroComponente from './components/PrimeiroComponente.vue'
+import LyfeCycle from './components/LyfeCycle.vue'
+export default{
+  name:'App',
+  components:{
 
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
+    PrimeiroComponente,
+    LyfeCycle
+
   }
 }
-</script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
+</script>
